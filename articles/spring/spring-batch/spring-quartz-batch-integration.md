@@ -30,7 +30,7 @@ spring:
 Trigger 는 모두 `QRTZ_TRIGGERS`에 등록되고 CRON, SIMPLE 타입에 따라 `QRTZ_CRON_TRIGGERS`, `QRTZ_SIMPLE_TRIGGERS`에 저장된다.
 
 
-### ***QRTZ_CRON_TRIGGERS**
+### QRTZ_CRON_TRIGGERS
 
 |SCHED_NAME|TRIGGER_NAME|TRIGGER_GROUP|CRON_EXPRESSION|TIME_ZONE_ID|
 |----------|------------|-------------|---------------|------------|
@@ -41,7 +41,7 @@ Trigger 는 모두 `QRTZ_TRIGGERS`에 등록되고 CRON, SIMPLE 타입에 따라
 
 trigger가 실행될 cron-expression
 
-### **QRTZ_SIMPLE_TRIGGERS**
+### QRTZ_SIMPLE_TRIGGERS
 
 |SCHED_NAME|TRIGGER_NAME|TRIGGER_GROUP|REPEAT_COUNT|REPEAT_INTERVAL|TIMES_TRIGGERED|
 |----------|------------|-------------|------------|---------------|---------------|
