@@ -23,6 +23,7 @@ spring:
 인스턴스가 시작되면 자동으로 스케줄러가 등록된다.
 
 |SCHED_NAME|INSTANCE_NAME|LAST_CHECKIN_TIME|CHECKIN_INTERVAL|
+|----------|-------------|-----------------|----------------|
 |scheduler-name|hugui-iMac.local59813123|159681332098|7500|
 |scheduler-name|hugui-iMac.local59178911|159681339912|7500|
 
@@ -32,6 +33,7 @@ Trigger 는 모두 `QRTZ_TRIGGERS`에 등록되고 CRON, SIMPLE 타입에 따라
 ### ***QRTZ_CRON_TRIGGERS**
 
 |SCHED_NAME|TRIGGER_NAME|TRIGGER_GROUP|CRON_EXPRESSION|TIME_ZONE_ID|
+|----------|------------|-------------|---------------|------------|
 |scheduler-name|trigger-1|trigger-group|0/20 * * ? * * |Asia/seoul|
 |scheduler-name|trigger-2|trigger-group|0/30 * * ? * * |Asia/seoul|
 
@@ -42,6 +44,7 @@ trigger가 실행될 cron-expression
 ### **QRTZ_SIMPLE_TRIGGERS**
 
 |SCHED_NAME|TRIGGER_NAME|TRIGGER_GROUP|REPEAT_COUNT|REPEAT_INTERVAL|TIMES_TRIGGERED|
+|----------|------------|-------------|------------|---------------|---------------|
 |scheduler-name|triger-3|trigger-group|100|5000|30|
 
 **REPEAT_COUNT**
